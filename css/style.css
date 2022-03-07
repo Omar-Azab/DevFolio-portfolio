@@ -1,0 +1,389 @@
+
+body{
+    background-color: #f5f5f5;
+}
+:root{
+    --main-color:#0078ff;
+}
+.navbar-collapse .navbar-nav .nav-item a{
+    position: relative;
+    
+}
+.navbar-collapse .navbar-nav .nav-item a::before{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color:white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 1s width;
+}
+.navbar-collapse .navbar-nav .nav-item:hover a::before {
+    width: 60%;
+}
+@media screen and (max-width:600px){
+    .navbar-collapse .navbar-nav .nav-item a::before{
+        display: none;
+    }
+}
+@media screen and (min-width:601px) and (max-width:768px){
+    .navbar-collapse .navbar-nav .nav-item a::before{
+        display: none;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .navbar-collapse .navbar-nav .nav-item a::before{
+        display: none;
+    }
+}
+/* S T A R T H E A D E R */
+header{
+background-image: url(../images/hero-bg.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-position: center center;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.479);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-caption h2{
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+.header-caption h3{
+    color: white;
+    font-size: 2.5rem;
+}
+.header-caption h3::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing{
+    0%{content: " D |";}
+    3%{content: " De |";}
+    6%{content: " Des |";}
+    9%{content: " Desi |";}
+    12%{content: " Desig |";}
+    15%{content: " Design |";}
+    18%{content: " Designe |";}
+    21%{content: " Designer |";}
+    24%{content: " Designe |";}
+    27%{content: " Design |";}
+    30%{content: " Desig |";}
+    33%{content: " Desi |";}
+    36%{content: " Des |";}
+    39%{content: " De |";}
+    42%{content: " D |";}
+    45%{content: "  |";}
+    48%{content: " D |";}
+    51%{content: " De |";}
+    53%{content: " Dev |";}
+    56%{content: " Deve |";}
+    59%{content: " Devel |";}
+    62%{content: " Develo |";}
+    65%{content: " Develop |";}
+    68%{content: " Develope |";}
+    71%{content: " Developer |";}
+    74%{content: " D |";}
+    77%{content: "  |";}
+    80%{content: " Free |";}
+    83%{content: " Freel |";}
+    86%{content: " Freela |";}
+    89%{content: " Freelan |";}
+    92%{content: " Freelanc |";}
+    95%{content: " Freelance |";}
+    98%{content: " Freelancer |";}
+    100%{content: "  |";}
+}
+/* E N D H E A D E R */
+
+/* S T A R T A B O U T */
+.about-section .left-section .image {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.about-section .right-section h3{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.about-section .right-section h3::before{
+content: "";
+width: 80px;
+height: 3px;
+background-color: var(--main-color);
+position: absolute;
+top: 40px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+}
+.progress{
+    height: 0.6rem;
+    border-radius: 0rem;
+}
+/* E N D A B O U T */
+
+/* S T A R T S E R V I C E S */
+.services-section .caption h3{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.services-section .sec1{
+    border-radius: 2.5rem;
+    padding: 2rem;
+    background-color: white;
+    margin-bottom: 2rem;
+}
+.services-section .sec1 .icon{
+    width: 50px;
+    height: 50px;
+    background-color: yellowgreen;
+}
+.services-section .sec1 i{
+    border: 8px solid var(--main-color);
+    padding: 1.5rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    transition: 2s background-color, color, border ;
+}
+.services-section .caption .line{
+    width: 40px;
+    height: 5px;
+    background-color: var(--main-color);
+    margin: 0 auto;
+}
+.services-section .sec1:hover i {
+    background-color: var(--main-color);
+    color: white;
+    border: 8px solid rgba(237, 245, 255, 0.259);
+}
+/* E N D S E R V I C E S  */
+
+/* S T A R T N U M B E R S */
+.numbers{
+    background-image: url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    width: 100%;
+    padding: 8rem 0;    
+
+}
+.overlay-num{
+    position: absolute;
+    background-color: #0077ff91;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.text-num .icons{
+    width: 30px;
+    height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.text-num .caption-num{
+    margin-bottom: 2rem;
+}
+/* E N D N U M B E R S */
+
+/* S T A R T P O R T F O L I O */
+.portfolio{
+    padding: 3rem;
+}
+.portfolio .port-text h3{
+      font-size: 3rem;
+      font-weight: bold;   
+}
+.portfolio .port-text .line{
+    width: 40px;
+    height: 5px;
+    background-color: var(--main-color);
+    margin: 0 auto;
+}
+.portfolio .card{
+    margin-top: 2rem;
+}
+.portfolio .card img{
+    transition: 2s transform;
+}
+.portfolio .card:hover img{
+    transform:  scale(2) rotate(10deg);
+
+}
+/* E N D P O R T F O L I O */
+
+/* S T A R T C A R O S E L */
+.carosel{
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    padding: 8rem;
+}
+.carosel .overlay-car{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0077ff91;
+    width: 100%;
+    height: 100%;
+}
+.carosel .carosel-item{
+    text-align: center;
+}
+.carosel .slider-image{
+    width: 10rem;
+    margin: auto;
+}
+.carosel .carosel-item img{
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+.carosel .slider-item h3{
+    color: white;
+    font-size: 2rem;
+}
+.carosel .carosel-item p{
+    color: white;
+    max-width: 700px;
+    margin: auto;
+}
+.carousel-indicators{
+    bottom: -50px;
+}
+.carousel-indicators [data-bs-target]{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+/* E N D C A R O S E L */
+
+/* S T A R T B L O G */
+.blog-text  h3{
+    font-size: 3rem;
+    font-weight: bold;   
+}
+.blog-text .line{
+  width: 40px;
+  height: 5px;
+  background-color: var(--main-color);
+  margin: 0 auto;
+}
+.card-footer .left .image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+/* E N D B L O G */
+
+/* S T A R T  F O O T E R */
+.footer{
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+}
+.footer .footer-layout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0077ff91;
+    width: 100%;
+    height: 100%;
+}
+.footer .line{
+    width: 80px;
+    height: 5px;
+    background-color: var(--main-color);
+    margin: left;
+  }
+  .footer .form-control{
+      border-radius: 0px !important;
+  }
+  .footer .button .btn{
+    border-radius: 3rem;
+    padding: 0.8rem 1.5rem;
+    border: 6px solid white;
+    transition: 1s all;
+  }
+  .footer .button .btn:hover {
+      border: 6px solid #97c8ff;
+  }
+  .footer .end-icons .icon1 a{
+      width: 35px;
+      height: 35px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 3px solid var(--main-color);
+      padding: 1.3rem;
+      margin-top: 2rem;
+      transition: 1s all;      
+  }
+  .footer .end-icons .icon1  i{
+      position: absolute;
+      font-size: 1.5rem;
+      color: black;
+      transition: 1s all;      
+  }
+  .footer .end-icons .icon1 a:hover{
+      background-color: var(--main-color);
+      border: 3px solid #97c8ff;
+  }
+  .footer .end-icons .icon1 a:hover i{
+      color: white;
+  }
+  /* E N D  F O O T E R */
+
+  /* S T A R T  E N D S I D E */
+  .end-site{
+      background-color: #0078ff;
+  }
+/* E N D  E N D S I D E */
+
+/* S T A R T B T N T O P */
+  .button-top{
+      position: fixed;
+      right: 20px;
+      bottom:15px;
+  } 
+
+  .btn-top a{
+      width: 50px;
+      height: 50px;
+      background-color: #0078ff;
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid white;
+  }
+  .btn-top i{
+      position: absolute;
+      color: white;
+      font-size: 1.5rem;
+  }
+  /* E N D B T N T O P */
